@@ -1,0 +1,20 @@
+@import url("./header.css");
+@import url("./banner.css");
+@import url("./dates.css");
+
+:root {
+  --gradient: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
+  --azul-claro: #c8deef;
+  --amarelo-claro: #fbf0dd;
+  --amarelo: #facf9d;
+  --azul-escuro: #2e7ba2;
+  --mostarda: #df9010;
+  --font-title: "Calistoga", cursive;
+  --font-text: "Raleway", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}

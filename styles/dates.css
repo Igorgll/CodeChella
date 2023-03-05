@@ -1,0 +1,66 @@
+.dates {
+  padding: 64px 120px 0 120px;
+
+  background: var(--gradient);
+}
+
+.alurodromo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.alurodromo img {
+  width: 609px;
+  height: 381px;
+}
+
+.dates_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 540px;
+}
+
+.dates_desc h2 {
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #444444;
+}
+
+.dates_desc p {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #444444;
+  text-align: justify;
+
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.div_btn_ingresso {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_comprar {
+  width: 256px;
+  height: 56px;
+  box-shadow: 4px 4px 0px #444444;
+  border-radius: 16px;
+  border: 0;
+
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+
+  background: var(--azul-escuro);
+}
