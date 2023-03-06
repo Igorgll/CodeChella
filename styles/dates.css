@@ -1,5 +1,5 @@
 .dates {
-  padding: 64px 120px 0 120px;
+  padding: 64px 120px;
 
   background: var(--gradient);
 }
@@ -50,6 +50,12 @@
 }
 
 .btn_comprar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
   width: 256px;
   height: 56px;
   box-shadow: 4px 4px 0px #444444;
@@ -63,4 +69,83 @@
   color: #fff;
 
   background: var(--azul-escuro);
+}
+
+.btn_comprar img {
+  width: 32px;
+  height: auto;
+}
+
+.line-up {
+  margin-top: 96px;
+  margin-bottom: 37px;
+}
+
+.line-up h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 83px;
+  color: #444444;
+
+  text-align: center;
+}
+
+.sabado {
+  display: flex;
+  justify-content: center;
+}
+
+.sabado h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  text-transform: uppercase;
+
+  padding: 16px;
+  background: var(--mostarda);
+  color: #ffffff;
+}
+
+@media (max-width: 1440px) {
+  .alurodromo {
+    gap: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .alurodromo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .alurodromo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn_comprar img {
+    width: 32px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .dates {
+    padding: 32px 24px;
+  }
+
+  .dates_desc {
+    width: 312px;
+    justify-content: center;
+  }
+
+  .dates_desc p {
+    text-align: center;
+  }
+
+  .alurodromo {
+    gap: 32px;
+  }
 }
