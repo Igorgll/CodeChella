@@ -1,0 +1,38 @@
+footer {
+  padding: 60px 120px;
+  background: var(--amarelo);
+  display: flex;
+  justify-content: space-between;
+}
+
+.acesse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.acesse p {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.acesse ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.desenvolvido {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desenvolvido p {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+}

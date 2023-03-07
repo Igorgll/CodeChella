@@ -91,12 +91,16 @@
   text-align: center;
 }
 
-.sabado {
+.sabado,
+.domingo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.sabado h2 {
+.sabado h2,
+.domingo h2 {
   font-family: var(--font-title);
   font-weight: 400;
   font-size: 48px;
@@ -106,6 +110,35 @@
   padding: 16px;
   background: var(--mostarda);
   color: #ffffff;
+
+  margin-bottom: 48px;
+}
+
+#sabado_list,
+#domingo_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-text);
+}
+
+#sabado_list li,
+#domingo_list li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  transform: translate(0, -50%);
+}
+
+.banner_footer_div {
+  width: 100%;
+  height: 338px;
+
+  background: url("/assets/banner_footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 1440px) {

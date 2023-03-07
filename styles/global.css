@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./banner.css");
 @import url("./dates.css");
+@import url("./footer.css");
 
 :root {
   --gradient: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
