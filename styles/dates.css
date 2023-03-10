@@ -96,7 +96,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 32px;
+  margin-bottom: 48px;
+  margin-top: 62px;
 }
 
 .sabado h2,
@@ -106,29 +109,66 @@
   font-size: 48px;
   line-height: 62px;
   text-transform: uppercase;
+  text-align: center;
 
   padding: 16px;
   background: var(--mostarda);
   color: #ffffff;
+}
 
-  margin-bottom: 48px;
+.line {
+  width: 400px;
+  height: 0;
+
+  border: 1px solid var(--mostarda);
 }
 
 #sabado_list,
 #domingo_list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
   font-family: var(--font-text);
+  color: #444444;
 }
 
-#sabado_list li,
-#domingo_list li {
-  display: inline-block;
-  margin: 0 10px;
-  padding: 10px;
-  transform: translate(0, -50%);
+.line-1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 32px;
+}
+
+.line-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 32px;
+}
+
+.line-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 32px;
+}
+
+.line-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 32px;
 }
 
 .banner_footer_div {
@@ -148,6 +188,47 @@
 }
 
 @media (max-width: 768px) {
+  .dates {
+    padding: 64px 49px;
+  }
+
+  .line {
+    width: 83.5px;
+  }
+
+  .line-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    font-size: 36px;
+    gap: 32px;
+  }
+
+  .line-2 li:nth-child(1),
+  li:nth-child(3) {
+    text-align: end;
+  }
+
+  .line-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 32px;
+  }
+
+  .line-3 li:nth-child(1) {
+    text-align: end;
+  }
+
+  .line-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .line-4 li:nth-child(1) {
+    text-align: end;
+  }
+
   .alurodromo {
     flex-direction: column;
     align-items: center;
@@ -161,6 +242,11 @@
   .btn_comprar img {
     width: 32px;
     height: 40px;
+  }
+
+  .sabado h2,
+  .domingo h2 {
+    font-size: 38px;
   }
 }
 

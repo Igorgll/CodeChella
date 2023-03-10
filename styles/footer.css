@@ -10,6 +10,7 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+  color: #444444;
 }
 
 .acesse p {
@@ -35,4 +36,25 @@ footer {
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
+  color: #444444;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 60px 90px;
+  }
+
+  .socials {
+    text-align: center;
+  }
+
+  .acesse {
+    justify-content: center;
+  }
+
+  .desenvolvido {
+    flex-direction: row;
+    gap: 5px;
+  }
 }
