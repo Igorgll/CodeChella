@@ -58,3 +58,19 @@ footer {
     gap: 5px;
   }
 }
+
+@media (max-width: 650px) {
+  footer {
+    padding: 24px 0 !important;
+  }
+
+  .acesse {
+    flex-direction: column;
+  }
+
+  .desenvolvido {
+    margin-top: 32px;
+    flex-direction: column !important;
+    text-align: center;
+  }
+}

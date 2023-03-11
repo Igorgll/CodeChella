@@ -127,9 +127,10 @@
 #domingo_list {
   font-family: var(--font-text);
   color: #444444;
+  text-align: center;
 }
 
-.line-1 {
+#line-1_sabado {
   display: flex;
   justify-content: center;
   font-weight: 800;
@@ -138,7 +139,7 @@
   margin-bottom: 32px;
 }
 
-.line-2 {
+#line-2_sabado {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -149,7 +150,7 @@
   margin-bottom: 32px;
 }
 
-.line-3 {
+#line-3_sabado {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -160,7 +161,49 @@
   margin-bottom: 32px;
 }
 
-.line-4 {
+#line-4_sabado {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 32px;
+}
+
+#line-1_domingo {
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 32px;
+}
+
+#line-2_domingo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 32px;
+}
+
+#line-3_domingo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 32px;
+}
+
+#line-4_domingo {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -185,6 +228,10 @@
   .alurodromo {
     gap: 46px;
   }
+
+  .line {
+    width: 330px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -196,37 +243,13 @@
     width: 83.5px;
   }
 
-  .line-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    font-size: 36px;
-    gap: 32px;
-  }
-
-  .line-2 li:nth-child(1),
-  li:nth-child(3) {
-    text-align: end;
-  }
-
-  .line-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    gap: 32px;
-  }
-
-  .line-3 li:nth-child(1) {
-    text-align: end;
-  }
-
-  .line-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .line-4 li:nth-child(1) {
-    text-align: end;
+  #line-2_sabado,
+  #line-3_sabado,
+  #line-4_sabado,
+  #line-2_domingo,
+  #line-3_domingo,
+  #line-4_domingo {
+    flex-wrap: wrap;
   }
 
   .alurodromo {
@@ -250,7 +273,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .dates {
     padding: 32px 24px;
   }
@@ -266,5 +289,45 @@
 
   .alurodromo {
     gap: 32px;
+  }
+
+  .btn_comprar {
+    width: 100%;
+  }
+
+  .line-up h2 {
+    font-size: 48px;
+  }
+
+  .sabado h2,
+  .domingo h2 {
+    font-size: 32px;
+    width: 289px;
+    padding: 6px 16px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  #line-1_sabado {
+    text-align: center;
+  }
+
+  #line-2_sabado,
+  #line-3_sabado,
+  #line-4_sabado,
+  #line-2_domingo,
+  #line-3_domingo,
+  #line-4_domingo {
+    gap: 16px;
+  }
+
+  #line-2_sabado li:nth-child(2),
+  #line-3_sabado li:nth-child(2),
+  #line-4_sabado li:nth-child(3),
+  #line-2_domingo li:nth-child(3),
+  #line-3_domingo li:nth-child(2) {
+    margin-bottom: 16px;
   }
 }

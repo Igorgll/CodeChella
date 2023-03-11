@@ -24,9 +24,16 @@
   color: #444444;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 650px) {
   .banner h1 {
     font-size: 32px;
     line-height: 42px;
+    max-width: 452px;
+  }
+
+  @media(max-width: 320px) {
+    .banner h1 {
+      font-size: 28px;
+    }
   }
 }
