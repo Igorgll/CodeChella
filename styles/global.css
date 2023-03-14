@@ -4,6 +4,7 @@
 @import url("./footer.css");
 @import url("./banner_experiencia.css");
 @import url("./acessibilidade.css");
+@import url("./toggleSwitch.css");
 
 :root {
   /* TEMA VERÃO */
@@ -32,7 +33,9 @@
   --lilas: #b6bcff;
   --branco: #ffffff;
   --background-boreal: url("/assets/banner-boreal.png");
+  --background-boreal-tablet: url("/assets/banner-boreal-tablet.png");
   --footer-banner-boreal: url("/assets/guitarra.png");
+  --footer-banner-boreal-mobile: url("/assets/banner-footer-mobile.png");
 }
 
 .font-branco {
@@ -44,6 +47,29 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 384px;
+  }
+
+  .bg-boreal {
+    background: var(--background-boreal-tablet);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 650px) {
+  .banner {
+    height: 270px;
+  }
+
+  .banda {
+    content: url("/assets/banda-mobile.png");
+  }
 }
 
 .button-bg-boreal {
@@ -68,6 +94,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.navbarMobileBoreal {
+  background: var(--primaria);
 }
 
 @media (max-width: 1080px) {

@@ -290,6 +290,10 @@
     gap: 32px;
   }
 
+  .pessoas_img {
+    content: url("/assets/people-mobile.png");
+  }
+
   .btn_comprar {
     width: 100%;
   }

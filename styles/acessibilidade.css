@@ -1,6 +1,7 @@
 .acessibilidade {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 48px;
 
   padding: 64px 121px;
@@ -37,4 +38,65 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
+}
+
+@media (max-width: 768px) {
+  .banner_experiencia {
+    background: url("/assets/banner-experiencia-tablet.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 384px;
+  }
+
+  .acessibilidade {
+    flex-direction: column;
+    padding: 32px 80px;
+    gap: 32px;
+  }
+
+  .texto {
+    text-align: center;
+    /* display: none; */
+  }
+}
+
+@media (max-width: 650px) {
+  .banner_experiencia {
+    background: url("/assets/banner-experiencia-mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+  }
+
+  .acessibilidade {
+    padding: 32px 24px;
+    align-items: center;
+  }
+
+  .moca_feliz {
+    background: url("/assets/moca-feliz-mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 312px;
+    height: 381px;
+  }
+
+  .texto {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner_experiencia {
+    height: 230px;
+  }
+
+  .acessibilidade {
+    padding: 32px 0;
+  }
 }

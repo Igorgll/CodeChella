@@ -6,6 +6,11 @@ function changeNavButton() {
   nav_items.classList.toggle("active");
 }
 
+const changeTheme = document.getElementById("toggleSwitch");
+changeTheme.onclick = () => {
+  toggleBorealTheme();
+};
+
 function toggleBorealTheme() {
   // mudar cor da font
   const textElements = document.querySelectorAll(
@@ -23,6 +28,10 @@ function toggleBorealTheme() {
     navbar.style.setProperty("background", "var(--primaria)");
   }
 
+  //navbar mobile
+  const navbarMobile = document.querySelector(".nav_items_mobile");
+  navbarMobile.classList.toggle("navbarMobileBoreal");
+
   //banner
   const banner = document.querySelector(".banner");
   banner.classList.toggle("bg-boreal");
@@ -33,6 +42,7 @@ function toggleBorealTheme() {
     img.src = "/assets/people.png";
   } else {
     img.src = "/assets/banda.png";
+    img.classList.add("banda");
   }
 
   // h2 sabado e domingo
