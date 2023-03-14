@@ -1,4 +1,4 @@
-.banner {
+.banner_experiencia {
   width: 100%;
   height: 407px;
 
@@ -6,13 +6,13 @@
   align-items: center;
   justify-content: center;
 
-  background: var(--background-verao);
+  background: url("/assets/banner_experiencia.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.banner h1 {
+.banner_experiencia h1 {
   font-family: var(--font-title);
   font-weight: 400;
   font-size: 64px;
@@ -25,15 +25,15 @@
 }
 
 @media (max-width: 650px) {
-  .banner h1 {
+  .banner_experiencia h1 {
     font-size: 32px;
     line-height: 42px;
     max-width: 452px;
   }
+}
 
-  @media(max-width: 320px) {
-    .banner h1 {
-      font-size: 28px;
-    }
+@media (max-width: 320px) {
+  .banner_experiencia h1 {
+    font-size: 28px;
   }
 }

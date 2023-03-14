@@ -1,0 +1,40 @@
+.acessibilidade {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+
+  padding: 64px 121px;
+  font-family: var(--font-text);
+
+  background: var(--gradient);
+  color: #444444;
+}
+
+.acessibilidade h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 24px;
+}
+
+.moca_feliz {
+  width: 609px;
+  height: 381px;
+  background: url("/assets/moca.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.texto {
+  padding: 20.5px 0;
+  width: 609px;
+  height: 381px;
+}
+
+.texto p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+}

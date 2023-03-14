@@ -2,8 +2,11 @@
 @import url("./banner.css");
 @import url("./dates.css");
 @import url("./footer.css");
+@import url("./banner_experiencia.css");
+@import url("./acessibilidade.css");
 
 :root {
+  /* TEMA VERÃO */
   --gradient: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
   --azul-claro: #c8deef;
   --amarelo-claro: #fbf0dd;
@@ -12,6 +15,59 @@
   --mostarda: #df9010;
   --font-title: "Calistoga", cursive;
   --font-text: "Raleway", sans-serif;
+  --font-color: #444444;
+  --background-verao: url("/assets/Banner.png");
+
+  /* TEMA BOREAL */
+  --gradient-boreal: linear-gradient(
+    180deg,
+    #304968 0%,
+    #36c1a0 52.6%,
+    #4650bd 100%
+  );
+  --primaria: #4650bd;
+  --secundaria: #304968;
+  --verde-claro: #36c1a0;
+  --verde-escuro: #008364;
+  --lilas: #b6bcff;
+  --branco: #ffffff;
+  --background-boreal: url("/assets/banner-boreal.png");
+  --footer-banner-boreal: url("/assets/guitarra.png");
+}
+
+.font-branco {
+  color: var(--branco) !important;
+}
+
+.bg-boreal {
+  background: var(--background-boreal);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-bg-boreal {
+  background: var(--primaria);
+}
+
+.sabado-bg,
+.domingo-bg {
+  background: var(--verde-escuro) !important;
+}
+
+.line-color {
+  border-color: var(--verde-escuro);
+}
+
+.footer-bg {
+  background: var(--primaria);
+}
+
+.footerBannerBoreal {
+  background: var(--footer-banner-boreal);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 1080px) {
