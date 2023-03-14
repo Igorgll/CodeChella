@@ -1,4 +1,11 @@
-.acessibilidade {
+.section_experiencia {
+  display: flex;
+  flex-direction: column;
+  background: var(--gradient);
+}
+
+.acessibilidade,
+.atracoes {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,11 +14,24 @@
   padding: 64px 121px;
   font-family: var(--font-text);
 
-  background: var(--gradient);
   color: #444444;
 }
 
-.acessibilidade h2 {
+.sustentabilidade {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 48px;
+
+  padding: 64px 121px;
+  font-family: var(--font-text);
+
+  color: #444444;
+}
+
+.acessibilidade h2,
+.sustentabilidade h2,
+.atracoes h2 {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
@@ -26,6 +46,39 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
+}
+
+.eco-bag {
+  width: 609px;
+  height: 381px;
+  background: url("/assets/eco-bag.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.carrossel {
+  background: url("/assets/carrossel.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 609px;
+  height: 381px;
+}
+
+.texto-sustentabilidade {
+  padding: 20.5px 0;
+  width: 609px;
+  height: 381px;
+  text-align: end;
+}
+
+.texto-sustentabilidade p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
 }
 
 .texto {
@@ -49,15 +102,17 @@
     height: 384px;
   }
 
-  .acessibilidade {
+  .acessibilidade,
+  .sustentabilidade,
+  .atracoes {
     flex-direction: column;
     padding: 32px 80px;
     gap: 32px;
   }
 
-  .texto {
+  .texto,
+  .texto-sustentabilidade {
     text-align: center;
-    /* display: none; */
   }
 }
 
@@ -70,7 +125,9 @@
     height: 270px;
   }
 
-  .acessibilidade {
+  .acessibilidade,
+  .sustentabilidade,
+  .atracoes {
     padding: 32px 24px;
     align-items: center;
   }
@@ -85,7 +142,27 @@
     height: 381px;
   }
 
-  .texto {
+  .eco-bag {
+    background: url("/assets/eco-bag-mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 312px;
+    height: 381px;
+  }
+
+  .carrossel {
+    background: url("/assets/carrossel-mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 312px;
+    height: 381px;
+  }
+
+  .texto,
+  .texto-sustentabilidade {
     width: 100%;
     height: auto;
   }
@@ -96,7 +173,8 @@
     height: 230px;
   }
 
-  .acessibilidade {
+  .acessibilidade,
+  .sustentabilidade {
     padding: 32px 0;
   }
 }

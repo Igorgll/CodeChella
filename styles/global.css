@@ -67,9 +67,13 @@
     height: 270px;
   }
 
-  .banda {
-    content: url("/assets/banda-mobile.png");
+  .alurodromoImg {
+    content: url("/assets/banda-mobile.png") !important;
   }
+}
+
+.alurodromoImg {
+  content: url("/assets/banda.png");
 }
 
 .button-bg-boreal {

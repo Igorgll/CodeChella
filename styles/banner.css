@@ -24,6 +24,12 @@
   color: #444444;
 }
 
+@media(max-width: 1440px) {
+  .banner {
+    height: 395px;
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     background: url("/assets/banner-tablet.png");

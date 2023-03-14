@@ -10,6 +10,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  mix-blend-mode: multiply;
 }
 
 .banner_experiencia h1 {

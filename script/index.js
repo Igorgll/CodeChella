@@ -38,12 +38,7 @@ function toggleBorealTheme() {
 
   // alurodromo img
   const img = document.querySelector(".alurodromo img");
-  if (img.src.includes("/assets/banda.png")) {
-    img.src = "/assets/people.png";
-  } else {
-    img.src = "/assets/banda.png";
-    img.classList.add("banda");
-  }
+  img.classList.toggle("alurodromoImg")
 
   // h2 sabado e domingo
   const h2_sabado = document.querySelector(".sabado h2");
