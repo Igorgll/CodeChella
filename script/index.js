@@ -11,8 +11,8 @@ btnMobile.onclick = () => {
   changeNavButton();
 };
 
-if (window.location.pathname === "/index.html") {
-  const changeTheme = document.querySelector("#toggleSwitch");
+const changeTheme = document.querySelector("#toggleSwitch");
+if (changeTheme) {
   changeTheme.onclick = () => {
     toggleBorealTheme();
   };
