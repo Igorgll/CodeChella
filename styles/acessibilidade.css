@@ -66,6 +66,7 @@
 
   width: 609px;
   height: 381px;
+  border-radius: 16px;
 }
 
 .texto-sustentabilidade {
@@ -110,9 +111,20 @@
     gap: 32px;
   }
 
+  .acessibilidade h2,
+  .sustentabilidade h2,
+  .atracoes h2 {
+    margin-bottom: 0;
+  }
+
   .texto,
   .texto-sustentabilidade {
     text-align: center;
+    height: auto;
+  }
+
+  footer {
+    padding: 24px 90px;
   }
 }
 

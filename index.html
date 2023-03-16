@@ -26,7 +26,7 @@
         <img src="./assets/Logo1.svg" alt="Logo do CodeChella" />
       </a>
 
-      <button type="button" class="btn_nav" onclick="changeNavButton()">
+      <button type="button" class="btn_nav">
         <span></span>
         <span></span>
         <span></span>
@@ -45,11 +45,11 @@
     </header>
     <div class="nav_items_mobile">
       <ul>
-        <li>A experiência</li>
+        <a href="./experiencia.html"><li>A experiência</li></a>
         <li>Mapa de Setores</li>
         <li>Informações</li>
         <li>Ingresso</li>
-        <li onclick="toggleBorealTheme()">Mude o tema &#9786;</li>
+        <li id="changeThemeMobile">Mude o tema &#9786;</li>
       </ul>
     </div>
 
@@ -163,6 +163,6 @@
       </div>
     </footer>
 
-    <script src="./script/index.js"></script>
+    <script type="module" src="./script/index.js"></script>
   </body>
 </html>

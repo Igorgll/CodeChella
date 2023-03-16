@@ -34,6 +34,9 @@
   --branco: #ffffff;
   --background-boreal: url("/assets/banner-boreal.png");
   --background-boreal-tablet: url("/assets/banner-boreal-tablet.png");
+  --background-banner-experiencia-boreal: url("/assets/banner-experiencia-boreal.png");
+  --background-banner-experiencia-boreal-tablet: url("/assets/banner-experiencia-boreal-tablet.png");
+  --background-banner-experiencia-boreal-mobile: url("/assets/banner-experiencia-boreal-mobile.png");
   --footer-banner-boreal: url("/assets/guitarra.png");
   --footer-banner-boreal-mobile: url("/assets/banner-footer-mobile.png");
 }
@@ -49,6 +52,14 @@
   background-repeat: no-repeat;
 }
 
+.banner_experiencia_boreal {
+  background: var(--background-banner-experiencia-boreal);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+}
+
 @media (max-width: 768px) {
   .banner {
     height: 384px;
@@ -56,6 +67,13 @@
 
   .bg-boreal {
     background: var(--background-boreal-tablet);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner_experiencia_boreal {
+    background: var(--background-banner-experiencia-boreal-tablet);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
