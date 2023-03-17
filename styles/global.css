@@ -17,7 +17,7 @@
   --font-title: "Calistoga", cursive;
   --font-text: "Raleway", sans-serif;
   --font-color: #444444;
-  --background-verao: url("https://i.imgur.com/9hVDT4k.png");
+  --background-verao: url("/assets/Banner.png");
 
   /* TEMA BOREAL */
   --gradient-boreal: linear-gradient(

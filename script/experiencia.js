@@ -6,6 +6,9 @@ import { changeFooterLogoColor } from "./index.js";
 import { changeSocialIconsColor } from "./index.js";
 import { changeNavbarMobileBackground } from "./index.js";
 
+const paginaAtiva = document.getElementById("pagina_ativa");
+paginaAtiva.style.textDecoration = "underline";
+
 const changeNavButtonExperiencia = document.querySelector(".btn_nav");
 changeNavButtonExperiencia.onclick = () => {
   changeNavButton();
