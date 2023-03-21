@@ -1,0 +1,126 @@
+.detalhes h3 {
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: var(--font-color);
+  margin-bottom: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 48px;
+}
+
+.cards h4 {
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--font-color);
+}
+
+.cards p {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.pista,
+.premium,
+.cadeiras {
+  display: flex;
+  flex-direction: column;
+  width: 383px;
+  height: 525px;
+}
+
+.premium {
+  margin-top: 108px;
+}
+
+.pista-bg {
+  width: 382.4px;
+  height: 239px;
+  margin-bottom: 24px;
+  background: var(--pista);
+}
+
+.premium-bg {
+  width: 382.4px;
+  height: 239px;
+  margin-bottom: 24px;
+  background: var(--premium);
+}
+
+.cadeiras-bg {
+  width: 382.4px;
+  height: 239px;
+  margin-bottom: 24px;
+  background: var(--cadeiras);
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0 60px;
+  }
+
+  .cards p {
+    max-width: 648px;
+  }
+
+  .pista,
+  .premium,
+  .cadeiras {
+    align-items: center;
+    width: 648px;
+    height: 445px;
+  }
+
+  .premium,
+  .cadeiras {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cards {
+    padding: 0;
+  }
+
+  .cards p {
+    max-width: 312px;
+  }
+
+  .pista,
+  .premium,
+  .cadeiras {
+    align-items: center;
+    width: 100%;
+    height: 565px;
+  }
+}
+
+@media (max-width: 650px) {
+  .pista-bg,
+  .premium-bg,
+  .cadeiras-bg {
+    border-radius: 16px;
+    width: 312px;
+    height: 239px;
+    background-position: center;
+    background-size: cover;
+  }
+}

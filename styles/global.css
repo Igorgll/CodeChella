@@ -7,6 +7,7 @@
 @import url("./toggleSwitch.css");
 @import url("./banner_setores.css");
 @import url("./mapa.css");
+@import url("./detalhes.css");
 
 :root {
   /* TEMA VERÃO */
@@ -21,6 +22,9 @@
   --font-color: #444444;
   --background-verao: url("/assets/Banner.png");
   --banner-setores: url("/assets/mapa_setores.png");
+  --pista: url("/assets/pista.png");
+  --premium: url("/assets/pista-2.png");
+  --cadeiras: url("/assets/cadeiras.png");
 
   /* TEMA BOREAL */
   --gradient-boreal: linear-gradient(
