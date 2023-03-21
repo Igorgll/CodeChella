@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Setores</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="./index.html">
+        <img src="./assets/Logo1.svg" alt="Logo do CodeChella" />
+      </a>
+
+      <button type="button" class="btn_nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav_items">
+        <li><a href="./experiencia.html">A experiência</a></li>
+        <a href="./setores.html"><li id="pagina_ativa">Mapa de Setores</li></a>
+        <li>Informações</li>
+        <li>Ingresso</li>
+        <label class="switch">
+          <input type="checkbox" id="toggleSwitchSetores" />
+          <span class="slider round"></span>
+        </label>
+      </ul>
+    </header>
+
+    <div class="nav_items_mobile">
+      <ul>
+        <a href="./experiencia.html"><li>A experiência</li></a>
+        <a href="./setores.html"><li>Mapa de Setores</li></a>
+        <li>Informações</li>
+        <li>Ingresso</li>
+        <!-- <li id="changeThemeMobileExperiencia">Mude o tema &#9786;</li> -->
+      </ul>
+    </div>
+    <div class="section_setores">
+      <div class="banner_setores">
+        <h1>Mapa de Setores</h1>
+      </div>
+      <div class="mapa">
+        <div class="mapa_img"></div>
+        <div class="legenda">
+          <h3>Legenda:</h3>
+          <ul>
+            <li>Pista Premium</li>
+            <li>Pista Comum</li>
+            <li>Cadeiras térreo</li>
+            <li>Cadeiras Superiores</li>
+            <li>Rampas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="socials">
+        <img src="./assets/Logo1 2.svg" alt="CodeChella logo" />
+        <div class="acesse">
+          <p>Acesse nossas redes:</p>
+          <ul>
+            <li><img src="./assets/wpp.svg" alt="Whatsapp icon" /></li>
+            <li><img src="./assets/twitch.svg" alt="Twitch icon" /></li>
+            <li><img src="./assets/instagram.svg" alt="Instagram icon" /></li>
+            <li><img src="./assets/twitter.svg" alt="Twitter icon" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="desenvolvido">
+        <p>Desenvolvido por Igão.</p>
+        <p>Projeto fictício sem fins comerciais.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./script/setores.js"></script>
+  </body>
+</html>

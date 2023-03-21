@@ -5,6 +5,8 @@
 @import url("./banner_experiencia.css");
 @import url("./acessibilidade.css");
 @import url("./toggleSwitch.css");
+@import url("./banner_setores.css");
+@import url("./mapa.css");
 
 :root {
   /* TEMA VERÃO */
@@ -18,6 +20,7 @@
   --font-text: "Raleway", sans-serif;
   --font-color: #444444;
   --background-verao: url("/assets/Banner.png");
+  --banner-setores: url("/assets/mapa_setores.png");
 
   /* TEMA BOREAL */
   --gradient-boreal: linear-gradient(
