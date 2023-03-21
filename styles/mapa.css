@@ -57,7 +57,7 @@
 }
 
 .legenda li:first-child::before,
-li:nth-child(5)::before {
+.legenda li:nth-child(5)::before {
   display: flex;
   content: "";
   width: 32px;
