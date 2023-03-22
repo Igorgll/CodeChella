@@ -8,6 +8,8 @@
 @import url("./banner_setores.css");
 @import url("./mapa.css");
 @import url("./detalhes.css");
+@import url("./banner_informacoes.css");
+@import url("./informacoes.css");
 
 :root {
   /* TEMA VERÃO */

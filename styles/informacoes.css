@@ -1,0 +1,18 @@
+.perguntas {
+  margin-top: 48px;
+}
+
+.perguntas h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+@media(max-width: 650px) {
+    .perguntas h2 {
+        font-size: 32px;
+    }
+}
