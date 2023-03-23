@@ -44,6 +44,13 @@ select {
   background: #ffffff;
 }
 
+.form option, .form select {
+  font-family: var(--font-text);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
 .aside_form {
   display: flex;
   flex-direction: row;

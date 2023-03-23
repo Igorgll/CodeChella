@@ -12,6 +12,8 @@
 @import url("./informacoes.css");
 @import url("./banner_ingresso.css");
 @import url("./form.css");
+@import url("./banner_ingresso-comprado.css");
+@import url("./ingresso-comprado.css");
 
 :root {
   /* TEMA VERÃO */

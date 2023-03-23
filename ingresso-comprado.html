@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>Ingresso</title>
+    <title>Ingresso Comprado</title>
   </head>
   <body>
     <header class="navbar">
@@ -55,42 +55,37 @@
     </div>
 
     <div class="section_ingresso">
-      <div class="banner_ingresso">
-        <h1>Garanta seu Ingresso</h1>
+      <div class="banner_ingresso-comprado">
+        <h1>Seu ingresso está aqui!</h1>
       </div>
-      <div class="content">
-        <h3>Preencha o formulário a seguir:</h3>
-        <div class="form">
-          <form>
-            <label for="name">Nome Completo:</label>
-            <input type="text" />
+      <div class="section_ingresso-comprado">
+        <h3>
+          Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do
+          evento e divirta-se!
+        </h3>
 
-            <label for="email">Email:</label>
-            <input type="text" />
+        <div class="ingresso_qrcode">
+          <div class="logo">
+            <img
+              src="./assets/Logo1 2.svg"
+              alt="CodeChella logo"
+              id="logo_ingresso"
+            />
+            <img src="./assets/html-tag.svg" alt="html tag icon" />
+          </div>
 
-            <div class="aside_form">
-              <div class="select">
-                <label for="tipo">Tipo de Ingresso:</label>
-                <select name="tipo">
-                  <option value="comum">Pista Comum</option>
-                  <option value="premium">Pista Premium</option>
-                  <option value="cadeiras">Cadeiras térreo</option>
-                  <option value="cadeiras">Cadeiras Superiores</option>
-                  <option value="rampas">Rampas</option>
-                </select>
-              </div>
-
-              <div class="nascimento">
-                <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="text" />
-              </div>
+          <div class="qr_code_div">
+            <div class="qr_code">
+              <img src="./assets/qr_code.svg" alt="qr code" />
             </div>
-
-            <button type="button">
-              Avançar!
-              <img src="./assets/arrow_right.svg" alt="Arrow right" />
-            </button>
-          </form>
+            <div class="ingresso_info">
+              <h4>Moni Hillman</h4>
+              <span>Ingresso Costesia</span>
+              <span>Setor Pista</span>
+              <span>Data: 11/03</span>
+              <span>Local: São Paulo-SP</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -114,6 +109,6 @@
       </div>
     </footer>
 
-    <script type="module" src="./script/ingresso.js"></script>
+    <script type="module" src="./script/ingresso-comprado.js"></script>
   </body>
 </html>
