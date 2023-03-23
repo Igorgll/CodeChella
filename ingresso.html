@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>Setores</title>
+    <title>Ingresso</title>
   </head>
   <body>
     <header class="navbar">
@@ -34,11 +34,11 @@
 
       <ul class="nav_items">
         <li><a href="./experiencia.html">A experiência</a></li>
-        <a href="./setores.html"><li id="pagina_ativa">Mapa de Setores</li></a>
+        <a href="./setores.html"><li>Mapa de Setores</li></a>
         <a href="./informacoes.html"><li>Informações</li></a>
-        <a href="./ingresso.html"><li>Ingresso</li></a>
+        <a href="./ingresso.html"><li id="pagina_ativa">Ingresso</li></a>
         <label class="switch">
-          <input type="checkbox" id="toggleSwitchSetores" />
+          <input type="checkbox" id="toggleSwitchInformacoes" />
           <span class="slider round"></span>
         </label>
       </ul>
@@ -53,52 +53,42 @@
         <!-- <li id="changeThemeMobileExperiencia">Mude o tema &#9786;</li> -->
       </ul>
     </div>
-    <div class="section_setores">
-      <div class="banner_setores">
-        <h1>Mapa de Setores</h1>
+
+    <div class="section_ingresso">
+      <div class="banner_ingresso">
+        <h1>Garanta seu Ingresso</h1>
       </div>
-      <div class="mapa">
-        <div class="mapa_img"></div>
-        <div class="legenda">
-          <h3>Legenda:</h3>
-          <ul>
-            <li>Pista Premium</li>
-            <li>Pista Comum</li>
-            <li>Cadeiras térreo</li>
-            <li>Cadeiras Superiores</li>
-            <li>Rampas</li>
-          </ul>
-        </div>
-      </div>
-      <div class="detalhes">
-        <h3>Mais detalhes sobre os setores:</h3>
-        <div class="cards">
-          <div class="pista">
-            <div class="pista-bg"></div>
-            <h4>Pista</h4>
-            <p>
-              Pista convencional, atendida pelos bares e banheiros das laterais
-              do estádio. Espaço amplo, com local para sentar e descansar.
-              Separada da pista premium por uma grade.
-            </p>
-          </div>
-          <div class="premium">
-            <div class="premium-bg"></div>
-            <h4>Pista Premium</h4>
-            <p>
-              Pista mais próxima do palco, com acesso muito próximo a banheiros
-              e bares num raio de 100m. Todas as pessoas idosas e/ou com
-              deficiência têm direito a acesso gratuito a essa área.
-            </p>
-          </div>
-          <div class="cadeiras">
-            <div class="cadeiras-bg"></div>
-            <h4>Cadeiras</h4>
-            <p>
-              Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros
-              e bares, visão um pouco elevada em relação às pistas.
-            </p>
-          </div>
+      <div class="content">
+        <h3>Preencha o formulário a seguir:</h3>
+        <div class="form">
+          <form>
+            <label for="name">Nome Completo:</label>
+            <input type="text" />
+
+            <label for="email">Email:</label>
+            <input type="text" />
+
+            <div class="aside_form">
+              <div class="select">
+                <label for="tipo">Tipo de Ingresso:</label>
+                <select name="tipo">
+                  <option value="australia">Tipo de Ingresso</option>
+                  <option value="australia">Tipo de Ingresso</option>
+                  <option value="australia">Tipo de Ingresso</option>
+                </select>
+              </div>
+
+              <div class="nascimento">
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <button type="button">
+              Avançar!
+              <img src="./assets/arrow_right.svg" alt="Arrow right" />
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -122,6 +112,6 @@
       </div>
     </footer>
 
-    <script type="module" src="./script/setores.js"></script>
+    <script type="module" src="./script/ingresso.js"></script>
   </body>
 </html>
