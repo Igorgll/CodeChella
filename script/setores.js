@@ -14,6 +14,11 @@ changeNavButtonSetores.onclick = () => {
   changeNavButton();
 };
 
+const toggleThemeMobile = document.getElementById("changeThemeMobileSetores");
+toggleThemeMobile.onclick = () => {
+  changeThemeToBorealSetores();
+};
+
 function changeBackgroundGradientSetores() {
   const setoresBg = document.querySelector(".section_setores");
   setoresBg.classList.toggle("active");

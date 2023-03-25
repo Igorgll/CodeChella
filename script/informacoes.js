@@ -14,6 +14,11 @@ changeNavButtonInformacoes.onclick = () => {
   changeNavButton();
 };
 
+const toggleThemeMobile = document.getElementById("changeThemeMobileInformacoes");
+toggleThemeMobile.onclick = () => {
+  changeThemeToBorealInformacoes();
+};
+
 const first_question = document.querySelector(".first_question");
 const first_content = document.querySelector(".conteudo_first");
 first_question.onclick = () => {

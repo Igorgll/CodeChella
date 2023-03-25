@@ -1,5 +1,6 @@
 import changeNavButton from "./index.js";
 import { changeNavbarBackground } from "./index.js";
+import { changeNavbarMobileBackground } from "./index.js";
 import { changeFooterBackground } from "./index.js";
 import { changeFooterLogoColor } from "./index.js";
 import { changeSocialIconsColor } from "./index.js";
@@ -11,6 +12,11 @@ paginaAtiva.style.textDecoration = "underline";
 const changeNavButtonIngresso = document.querySelector(".btn_nav");
 changeNavButtonIngresso.onclick = () => {
   changeNavButton();
+};
+
+const toggleThemeMobile = document.getElementById("changeThemeMobileIngresso");
+toggleThemeMobile.onclick = () => {
+  changeThemeToBorealIngresso();
 };
 
 const changeThemeIngresso = document.getElementById("toggleSwitchIngresso");
@@ -37,6 +43,7 @@ function changeThemeToBorealIngresso() {
   changeFontColor();
   changeBannerBorealIngresso();
   changeNavbarBackground();
+  changeNavbarMobileBackground();
   changeBackgroundGradientIngresso();
   changeBtnBackground();
   changeFooterBackground();
