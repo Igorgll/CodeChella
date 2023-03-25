@@ -57,6 +57,10 @@ select {
   gap: 24px;
 }
 
+.select select, .select option {
+  color: var(--font-color) !important;
+}
+
 .select,
 .nascimento {
   width: 385.5px;
