@@ -1,6 +1,8 @@
 .perguntas {
   margin-top: 48px;
-  padding: 0 222px;
+  padding-left: 222px;
+  padding-right: 222px;
+  padding-bottom: 48px;
 }
 
 .perguntas h2 {
@@ -71,7 +73,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
-  color: var(--font-color);
+  color: var(--font-color) !important;
 }
 
 .conteudo_third ul {
@@ -84,8 +86,13 @@
   color: var(--font-color);
 }
 
+.conteudo_third ul li {
+  color: var(--font-color) !important;
+}
+
 .conteudo_first a {
   text-decoration: underline;
+  color: var(--font-color) !important;
 }
 
 .conteudo_first.active,

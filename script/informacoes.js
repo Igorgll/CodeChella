@@ -1,4 +1,10 @@
 import changeNavButton from "./index.js";
+import { changeFontColor } from "./index.js";
+import { changeNavbarBackground } from "./index.js";
+import { changeFooterLogoColor } from "./index.js";
+import { changeFooterBackground } from "./index.js";
+import { changeSocialIconsColor } from "./index.js";
+import { changeNavbarMobileBackground } from "./index.js";
 
 const paginaAtiva = document.getElementById("pagina_ativa");
 paginaAtiva.style.textDecoration = "underline";
@@ -37,3 +43,69 @@ const fifth_content = document.querySelector(".conteudo_fifth");
 fifth_question.onclick = () => {
   fifth_content.classList.toggle("active");
 };
+
+function changeBackgroundGradientInformacoes() {
+  const informacoesBg = document.querySelector(".section_informacoes");
+  informacoesBg.classList.toggle("active");
+}
+
+function changeBannerBorealInformacoes() {
+  const banner_informacoes = document.querySelector(".banner_informacoes");
+  banner_informacoes.classList.toggle("banner_informacoes_boreal");
+}
+
+function changeFontColorInformacoes() {
+  const textElements = document.querySelectorAll(
+    "body *:not(script):not(style)"
+  );
+  for (let i = 0; i < textElements.length; i++) {
+    const elementClass = textElements[i].getAttribute("class");
+    if (
+      elementClass &&
+      (elementClass.includes("first_conteudo") ||
+        elementClass.includes("second_conteudo") ||
+        elementClass.includes("third_conteudo") ||
+        elementClass.includes("fourth_conteudo") ||
+        elementClass.includes("fifth_conteudo"))
+    ) {
+    } else {
+      textElements[i].classList.toggle("font-branco");
+    }
+  }
+}
+
+function changeQuestionsBackground() {
+  const first = document.querySelector(".first_question");
+  first.classList.toggle("bg-primaria");
+
+  const second = document.querySelector(".second_question");
+  second.classList.toggle("bg-primaria");
+
+  const third = document.querySelector(".third_question");
+  third.classList.toggle("bg-primaria");
+
+  const fourth = document.querySelector(".fourth_question");
+  fourth.classList.toggle("bg-primaria");
+
+  const fifth = document.querySelector(".fifth_question");
+  fifth.classList.toggle("bg-primaria");
+}
+
+const changeThemeInformacoes = document.getElementById(
+  "toggleSwitchInformacoes"
+);
+changeThemeInformacoes.onclick = () => {
+  changeThemeToBorealInformacoes();
+};
+
+function changeThemeToBorealInformacoes() {
+  changeFontColorInformacoes();
+  changeNavbarBackground();
+  changeNavbarMobileBackground();
+  changeBannerBorealInformacoes();
+  changeQuestionsBackground();
+  changeFooterLogoColor();
+  changeFooterBackground();
+  changeSocialIconsColor();
+  changeBackgroundGradientInformacoes();
+}
