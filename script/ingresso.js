@@ -51,9 +51,30 @@ data.onkeyup = () => {
     inputSpanData.innerHTML =
       "Por favor, insira uma data válida no formato dd/mm/aaaa.";
   } else {
-    inputSpanData.innerHTML = "";
-    dataValido = true;
-    localStorage.setItem("data", data.value);
+    const dataNascimento = new Date(data.value);
+    const dataAtual = new Date();
+
+    const idadeMinima = 16;
+    const diffAnos = dataAtual.getFullYear() - dataNascimento.getFullYear();
+    const diffMeses = dataAtual.getMonth() - dataNascimento.getMonth();
+    const diffDias = dataAtual.getDate() - dataNascimento.getDate();
+
+    let idade = diffAnos;
+
+    if (diffMeses < 0 || (diffMeses === 0 && diffDias < 0)) {
+      idade--;
+    }
+
+    if (idade >= idadeMinima) {
+      inputSpanData.innerHTML = "";
+      dataValido = true;
+      localStorage.setItem("data", data.value);
+    } else {
+      inputSpanData.style.color = "red";
+      inputSpanData.innerHTML =
+        "Entrada permitida apenas com acompanhamento dos responsáveis.";
+      dataValido = true;
+    }
   }
 };
 
