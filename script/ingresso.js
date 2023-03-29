@@ -65,7 +65,10 @@ data.onkeyup = () => {
       idade--;
     }
 
-    if (idade >= idadeMinima) {
+    if (idade < 10) {
+      inputSpanData.style.color = "red";
+      inputSpanData.innerHTML = "Entrada não permitida.";
+    } else if (idade >= idadeMinima) {
       inputSpanData.innerHTML = "";
       dataValido = true;
       localStorage.setItem("data", data.value);
