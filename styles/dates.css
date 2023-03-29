@@ -67,6 +67,7 @@
   line-height: 40px;
   color: #fff;
 
+  cursor: pointer;
   background: var(--azul-escuro);
 }
 

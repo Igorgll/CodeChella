@@ -63,32 +63,35 @@
         <div class="form">
           <form>
             <label for="name">Nome Completo:</label>
-            <input type="text" />
+            <input type="text" id="nome" />
+            <span id="inputSpanNome"></span>
 
             <label for="email">Email:</label>
-            <input type="text" />
+            <input type="email" id="email" />
+            <span id="inputSpanEmail"></span>
 
             <div class="aside_form">
               <div class="select">
                 <label for="tipo">Tipo de Ingresso:</label>
-                <select name="tipo">
-                  <option value="comum">Pista Comum</option>
-                  <option value="premium">Pista Premium</option>
-                  <option value="cadeiras">Cadeiras térreo</option>
-                  <option value="cadeiras">Cadeiras Superiores</option>
-                  <option value="rampas">Rampas</option>
+                <select name="tipo" id="tipoIngresso">
+                  <option>Selecione o tipo de ingresso</option>
+                  <option value="Comum">Pista Comum</option>
+                  <option value="Premium">Pista Premium</option>
+                  <option value="Cadeiras Térreo">Cadeiras térreo</option>
+                  <option value="Cadeiras Superiores">Cadeiras Superiores</option>
+                  <option value="Rampas">Rampas</option>
                 </select>
+                <span id="inputSpanSelect"></span>
               </div>
 
               <div class="nascimento">
                 <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="text" />
+                <input type="text" type="date" id="data"/>
+                <span id="inputSpanData"></span>
               </div>
             </div>
 
-            <button type="button"
-            id="btn_ingresso"
-            >
+            <button type="button" id="btn_ingresso">
               Avançar!
               <img src="./assets/arrow_right.svg" alt="Arrow right" />
             </button>
