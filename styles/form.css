@@ -117,8 +117,9 @@ input:focus {
 }
 
 @media (max-width: 768px) {
-  .form {
-    width: 90%;
+  .form,
+  form {
+    width: 662px;
   }
 
   .content h3 {
@@ -135,7 +136,19 @@ input:focus {
 
   .form {
     height: auto;
-    font-size: 32px;
+  }
+
+  .form label {
+    font-size: 28px;
+  }
+
+  #tipoIngresso {
+    width: 110%;
+  }
+
+  .form,
+  form {
+    width: 312px;
   }
 
   .aside_form {
@@ -146,5 +159,31 @@ input:focus {
   .select,
   .nascimento {
     width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  #tipoIngresso {
+    width: 110%;
+  }
+
+  .form,
+  form {
+    width: 290px;
+  }
+}
+
+@media (max-width: 320px) {
+  #tipoIngresso {
+    width: 113%;
+  }
+
+  .form,
+  form {
+    width: 230px;
+  }
+
+  .form label {
+    font-size: 24px;
   }
 }

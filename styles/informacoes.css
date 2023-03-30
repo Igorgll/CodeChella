@@ -1,8 +1,6 @@
 .perguntas {
-  margin-top: 48px;
-  padding-left: 222px;
-  padding-right: 222px;
-  padding-bottom: 48px;
+  margin: 46px auto 0 auto;
+  width: 996px;
 }
 
 .perguntas h2 {
@@ -105,11 +103,19 @@
 
 @media (max-width: 768px) {
   .perguntas {
-    padding: 0 60px;
+    width: 648px;
   }
 }
 
 @media (max-width: 650px) {
+  .perguntas {
+    width: 70%;
+  }
+
+  .perguntas h3 {
+    font-size: 24px;
+  }
+
   .perguntas h2 {
     font-size: 32px;
     line-height: 42px;

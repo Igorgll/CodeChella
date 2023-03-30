@@ -89,6 +89,13 @@ export function changeSocialIconsColor() {
   }
 }
 
+function toggleSummerTheme() {
+  const html = document.querySelector("html");
+  html.classList.remove("bg-boreal");
+}
+
+toggleSummerTheme();
+
 function toggleBorealTheme() {
   //banner
   const banner = document.querySelector(".banner");
