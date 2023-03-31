@@ -16,22 +16,60 @@
 @import url("./ingresso-comprado.css");
 
 :root {
+  --font-title: "Calistoga", cursive;
+  --font-text: "Raleway", sans-serif;
+}
+
+html[data-theme="verao"] {
   /* TEMA VERÃO */
   --gradient: linear-gradient(180deg, #bfdae6 0%, #fcf0dd 50%, #facf9d 100%);
   --azul-claro: #c8deef;
   --amarelo-claro: #fbf0dd;
   --amarelo: #facf9d;
   --azul-escuro: #2e7ba2;
+  --secundaria: #304968;
   --mostarda: #df9010;
-  --font-title: "Calistoga", cursive;
-  --font-text: "Raleway", sans-serif;
   --font-color: #444444;
   --background-verao: url("/assets/Banner.png");
   --banner-setores: url("/assets/mapa_setores.png");
   --pista: url("/assets/pista.png");
   --premium: url("/assets/pista-2.png");
   --cadeiras: url("/assets/cadeiras.png");
+  --banner-footer-boreal: url("/assets/banner_footer.png");
+}
 
+html[data-theme="verao"] .navbar {
+  background: var(--azul-escuro);
+}
+
+html[data-theme="verao"] .banner {
+  background: var(--background-verao);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html[data-theme="verao"] .line {
+  border: 1px solid var(--mostarda);
+}
+
+html[data-theme="verao"] .sabado h2,
+html[data-theme="verao"] .domingo h2 {
+  background: var(--mostarda);
+}
+
+html[data-theme="verao"] .banner_footer_div {
+  background: var(--banner-footer-boreal);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html[data-theme="verao"] footer {
+  background: var(--amarelo);
+}
+
+html[data-theme="boreal"] {
   /* TEMA BOREAL */
   --gradient-boreal: linear-gradient(
     180deg,
@@ -40,7 +78,6 @@
     #4650bd 100%
   );
   --primaria: #4650bd;
-  --secundaria: #304968;
   --verde-claro: #36c1a0;
   --verde-escuro: #008364;
   --lilas: #b6bcff;
@@ -59,26 +96,97 @@
   --footer-banner-boreal-mobile: url("/assets/banner-footer-mobile.png");
 }
 
-.font-branco {
+html[data-theme="boreal"] .navbar {
+  background: var(--primaria);
+}
+
+html[data-theme="boreal"] .font-branco {
   color: var(--branco) !important;
 }
 
-.bg-primaria {
+html[data-theme="boreal"] .bg-primaria {
   background: var(--primaria) !important;
 }
 
-.bg-conteudo {
-  background: var(--azul-claro);
-}
-
-.bg-boreal {
+html[data-theme="boreal"] .banner {
   background: var(--background-boreal);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.banner_experiencia_boreal {
+html[data-theme="boreal"] .alurodromo img:not(.div_btn_ingresso img) {
+  content: url("/assets/banda.png");
+}
+
+html[data-theme="boreal"] .banner h1,
+html[data-theme="boreal"] .dates_desc h2,
+html[data-theme="boreal"] .dates_desc p,
+html[data-theme="boreal"] .line-up h2,
+html[data-theme="boreal"] #sabado_list,
+html[data-theme="boreal"] #domingo_list {
+  color: var(--branco);
+}
+
+html[data-theme="boreal"] .btn_comprar {
+  background: var(--primaria);
+}
+
+html[data-theme="boreal"] .dates {
+  background: var(--gradient-boreal);
+}
+
+html[data-theme="boreal"] .line {
+  border: 1px solid var(--verde-escuro);
+}
+
+html[data-theme="boreal"] .sabado h2,
+html[data-theme="boreal"] .domingo h2 {
+  background: var(--verde-escuro);
+}
+
+html[data-theme="boreal"] .banner_footer_div {
+  background: var(--footer-banner-boreal);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+}
+
+html[data-theme="boreal"] footer {
+  background: var(--primaria);
+}
+
+html[data-theme="boreal"] .acesse p,
+html[data-theme="boreal"] .desenvolvido p {
+  color: var(--branco);
+}
+
+html[data-theme="boreal"] .socials img {
+  content: url("/assets/Logo1.svg");
+}
+
+html[data-theme="boreal"] .acesse ul li:first-child img {
+  content: url("/assets/wpp-white.svg");
+}
+
+html[data-theme="boreal"] .acesse ul li:nth-child(2) img {
+  content: url("/assets/twitch-white.svg");
+}
+
+html[data-theme="boreal"] .acesse ul li:nth-child(3) img {
+  content: url("/assets/instagram-white.svg");
+}
+
+html[data-theme="boreal"] .acesse ul li:nth-child(4) img {
+  content: url("/assets/twitter-white.svg");
+}
+
+html[data-theme="boreal"] .section_experiencia {
+  background: var(--gradient-boreal);
+}
+
+html[data-theme="boreal"] .banner_experiencia {
   background: var(--background-banner-experiencia-boreal);
   background-position: center;
   background-size: cover;
@@ -86,7 +194,26 @@
   mix-blend-mode: normal;
 }
 
-.banner_setores_boreal {
+html[data-theme="boreal"] .banner_experiencia h1 {
+  color: var(--branco);
+}
+
+html[data-theme="boreal"] .texto h2,
+html[data-theme="boreal"] .texto p,
+html[data-theme="boreal"] .texto-sustentabilidade h2,
+html[data-theme="boreal"] .texto-sustentabilidade p {
+  color: var(--branco);
+}
+
+html[data-theme="boreal"] .banner_experiencia_boreal {
+  background: var(--background-banner-experiencia-boreal);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+}
+
+html[data-theme="boreal"] .banner_setores_boreal {
   background: var(--background-banner-setores-boreal);
   background-position: center;
   background-size: cover;
@@ -94,7 +221,7 @@
   mix-blend-mode: normal;
 }
 
-.banner_informacoes_boreal {
+html[data-theme="boreal"] .banner_informacoes_boreal {
   background: var(--background-banner-informacoes-boreal);
   background-position: center;
   background-size: cover;
@@ -102,15 +229,7 @@
   mix-blend-mode: normal;
 }
 
-.banner_ingresso_boreal {
-  background: var(--background-banner-ingresso-boreal);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  mix-blend-mode: normal;
-}
-
-.banner_ingresso_comprado-boreal {
+html[data-theme="boreal"] .banner_ingresso_comprado-boreal {
   background: var(--background-banner-ingresso-comprado-boreal);
   background-position: center;
   background-size: cover;
@@ -118,7 +237,7 @@
   mix-blend-mode: normal;
 }
 
-.logo_ingresso_boreal {
+html[data-theme="boreal"] .logo_ingresso_boreal {
   background: var(--logo-ingresso-boreal);
   background-position: center;
   background-size: cover;
@@ -126,11 +245,15 @@
   mix-blend-mode: normal;
 }
 
-.section_setores.active,
+html[data-theme="boreal"] .section_setores.active,
 .section_informacoes.active,
 .section_ingresso.active,
 .ingresso_qrcode.active {
   background: var(--gradient-boreal);
+}
+
+.bg-conteudo {
+  background: var(--azul-claro);
 }
 
 @media (max-width: 768px) {
@@ -138,14 +261,14 @@
     height: 384px;
   }
 
-  .bg-boreal {
+  html[data-theme="boreal"] .bg-boreal {
     background: var(--background-boreal-tablet);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .banner_experiencia_boreal {
+  html[data-theme="boreal"] .banner_experiencia_boreal {
     background: var(--background-banner-experiencia-boreal-tablet);
     background-position: center;
     background-size: cover;
@@ -167,7 +290,7 @@
   content: url("/assets/banda.png");
 }
 
-.button-bg-boreal {
+html[data-theme="boreal"] .button-bg-boreal {
   background: var(--primaria);
 }
 
@@ -184,14 +307,14 @@
   background: var(--primaria);
 }
 
-.footerBannerBoreal {
+html[data-theme="boreal"] .footerBannerBoreal {
   background: var(--footer-banner-boreal);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.navbarMobileBoreal {
+html[data-theme="boreal"] .navbarMobileBoreal {
   background: var(--primaria);
 }
 
