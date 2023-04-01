@@ -30,6 +30,10 @@
   color: #fff;
 }
 
+.nav_items li:hover {
+  text-decoration: underline;
+}
+
 .btn_nav {
   display: none;
   flex-direction: column;
