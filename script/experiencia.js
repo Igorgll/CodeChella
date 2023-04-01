@@ -31,7 +31,9 @@ if (toggle) {
 
 export function setTheme() {
   let savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    document.documentElement.setAttribute("data-theme", savedTheme);
+  if (!savedTheme) {
+    savedTheme = "verao";
+    localStorage.setItem("theme", savedTheme);
   }
+  document.documentElement.setAttribute("data-theme", savedTheme);
 }
