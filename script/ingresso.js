@@ -20,9 +20,7 @@ if (toggle) {
   });
 }
 
-const changeThemeMobile = document.getElementById(
-  "changeThemeMobileIngresso"
-);
+const changeThemeMobile = document.getElementById("changeThemeMobileIngresso");
 if (changeThemeMobile) {
   changeThemeMobile.addEventListener("click", () => {
     let targetTheme;
@@ -103,15 +101,15 @@ data.onkeyup = () => {
     if (idade < 10) {
       inputSpanData.style.color = "red";
       inputSpanData.innerHTML = "Entrada não permitida.";
-    } else if (idade >= idadeMinima) {
-      inputSpanData.innerHTML = "";
-      dataValido = true;
-      localStorage.setItem("data", data.value);
-    } else {
+    } else if (idade >= 13 && idade <= 15) {
       inputSpanData.style.color = "red";
       inputSpanData.innerHTML =
         "Entrada permitida apenas com acompanhamento dos responsáveis.";
       dataValido = true;
+    } else {
+      inputSpanData.innerHTML = "";
+      dataValido = true;
+      localStorage.setItem("data", data.value);
     }
   }
 };
