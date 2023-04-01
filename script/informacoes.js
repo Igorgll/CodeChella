@@ -13,6 +13,21 @@ changeNavButtonInformacoes.onclick = () => {
   changeNavButton();
 };
 
+const toggle = document.getElementById("toggleSwitchInformacoes");
+if (toggle) {
+  toggle.checked = localStorage.getItem("theme") === "boreal";
+  toggle.addEventListener("change", () => {
+    let targetTheme;
+    if (toggle.checked) {
+      targetTheme = "boreal";
+    } else {
+      targetTheme = "verao";
+    }
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+  });
+}
+
 const first_question = document.querySelector(".first_question");
 const first_content = document.querySelector(".conteudo_first");
 first_question.onclick = () => {

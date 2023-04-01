@@ -14,6 +14,21 @@ changeNavButtonExperiencia.onclick = () => {
   changeNavButton();
 };
 
+const toggle = document.getElementById("toggleSwitchExperiencia");
+if (toggle) {
+  toggle.checked = localStorage.getItem("theme") === "boreal";
+  toggle.addEventListener("change", () => {
+    let targetTheme;
+    if (toggle.checked) {
+      targetTheme = "boreal";
+    } else {
+      targetTheme = "verao";
+    }
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+  });
+}
+
 export function setTheme() {
   let savedTheme = localStorage.getItem("theme");
   if (savedTheme) {

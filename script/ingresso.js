@@ -5,6 +5,21 @@ window.addEventListener("load", function() {
   setTheme();
 })
 
+const toggle = document.getElementById("toggleSwitchIngresso");
+if (toggle) {
+  toggle.checked = localStorage.getItem("theme") === "boreal";
+  toggle.addEventListener("change", () => {
+    let targetTheme;
+    if (toggle.checked) {
+      targetTheme = "boreal";
+    } else {
+      targetTheme = "verao";
+    }
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+  });
+}
+
 let nome = document.getElementById("nome");
 let email = document.getElementById("email");
 let data = document.getElementById("data");
