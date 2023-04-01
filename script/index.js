@@ -1,8 +1,8 @@
 import { setTheme } from "./experiencia.js";
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   setTheme();
-})
+});
 
 export default function changeNavButton() {
   const button = document.querySelector(".btn_nav");
@@ -17,10 +17,10 @@ btnMobile.onclick = () => {
   changeNavButton();
 };
 
-const changeTheme = document.querySelector("#toggleSwitch");
 const changeThemeMobile = document.getElementById("changeThemeMobile");
+const changeTheme = document.querySelector("#toggleSwitch");
 if (changeTheme) {
-  changeTheme.addEventListener("click", () => {
+  changeTheme.addEventListener("change", () => {
     let targetTheme;
     let currentTheme = document.documentElement.getAttribute("data-theme");
     if (currentTheme === "verao") {

@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
 });
 
 const paginaAtiva = document.getElementById("pagina_ativa");
-if(paginaAtiva) {
+if (paginaAtiva) {
   paginaAtiva.style.textDecoration = "underline";
 }
 
