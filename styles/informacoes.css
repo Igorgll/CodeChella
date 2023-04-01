@@ -99,6 +99,17 @@
 .conteudo_fourth.active,
 .conteudo_fifth.active {
   display: flex;
+  animation-name: show_navigation;
+  animation-duration: 0.5s;
+}
+
+@keyframes show_navigation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {

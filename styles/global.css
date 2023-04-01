@@ -81,11 +81,14 @@ html[data-theme="boreal"] {
   --lilas: #b6bcff;
   --branco: #ffffff;
   --background-boreal: url("/assets/banner-boreal.png");
+  --banner-boreal-mobile: url("/assets/banner-boreal-mobile.png");
   --background-boreal-tablet: url("/assets/banner-boreal-tablet.png");
   --background-banner-experiencia-boreal: url("/assets/banner-experiencia-boreal.png");
   --background-banner-experiencia-boreal-tablet: url("/assets/banner-experiencia-boreal-tablet.png");
   --background-banner-experiencia-boreal-mobile: url("/assets/banner-experiencia-boreal-mobile.png");
   --background-banner-setores-boreal: url("/assets/banner-boreal_setores.png");
+  --background-banner-setores-boreal-tablet: url("/assets/banner-setores-boreal-tablet.png");
+  --background-banner-setores-boreal-mobile: url("/assets/banner-setores-boreal-mobile.png");
   --background-banner-informacoes-boreal: url("/assets/banner-informacoes-boreal.png");
   --background-banner-ingresso-boreal: url("/assets/banner-ingresso-boreal.png");
   --background-banner-ingresso-comprado-boreal: url("/assets/banner-ingresso-comprado-boreal.png");
@@ -328,15 +331,22 @@ html[data-theme="boreal"] .section_setores.active,
     height: 384px;
   }
 
-  html[data-theme="boreal"] .bg-boreal {
+  html[data-theme="boreal"] .banner {
     background: var(--background-boreal-tablet);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  html[data-theme="boreal"] .banner_experiencia_boreal {
+  html[data-theme="boreal"] .banner_experiencia {
     background: var(--background-banner-experiencia-boreal-tablet);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  html[data-theme="boreal"] .banner_setores {
+    background: var(--background-banner-setores-boreal-tablet);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -346,6 +356,27 @@ html[data-theme="boreal"] .section_setores.active,
 @media (max-width: 650px) {
   .banner {
     height: 270px;
+  }
+
+  html[data-theme="boreal"] .banner {
+    background: var(--banner-boreal-mobile);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  html[data-theme="boreal"] .banner_experiencia {
+    background: var(--background-banner-experiencia-boreal-mobile);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  html[data-theme="boreal"] .banner_setores {
+    background: var(--background-banner-setores-boreal-mobile);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .alurodromoImg {
