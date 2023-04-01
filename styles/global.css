@@ -99,6 +99,10 @@ html[data-theme="boreal"] .navbar {
   background: var(--primaria);
 }
 
+html[data-theme="boreal"] .nav_items_mobile {
+  background: var(--primaria);
+}
+
 html[data-theme="boreal"] .font-branco {
   color: var(--branco) !important;
 }

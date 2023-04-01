@@ -1,9 +1,9 @@
 import changeNavButton from "./index.js";
 import { setTheme } from "./experiencia.js";
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   setTheme();
-})
+});
 
 const paginaAtiva = document.getElementById("pagina_ativa");
 paginaAtiva.style.textDecoration = "underline";
@@ -23,6 +23,27 @@ if (toggle) {
     } else {
       targetTheme = "verao";
     }
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+  });
+}
+
+const changeThemeMobile = document.getElementById(
+  "changeThemeMobileSetores"
+);
+if (changeThemeMobile) {
+  changeThemeMobile.addEventListener("click", () => {
+    let targetTheme;
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+
+    if (currentTheme === "verao") {
+      targetTheme = "boreal";
+      changeThemeMobile.checked = true;
+    } else {
+      targetTheme = "verao";
+      changeThemeMobile.checked = false;
+    }
+
     document.documentElement.setAttribute("data-theme", targetTheme);
     localStorage.setItem("theme", targetTheme);
   });

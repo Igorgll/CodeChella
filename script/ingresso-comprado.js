@@ -24,6 +24,27 @@ if (toggle) {
   });
 }
 
+const changeThemeMobile = document.getElementById(
+  "changeThemeMobileIngressoComprado"
+);
+if (changeThemeMobile) {
+  changeThemeMobile.addEventListener("click", () => {
+    let targetTheme;
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+
+    if (currentTheme === "verao") {
+      targetTheme = "boreal";
+      changeThemeMobile.checked = true;
+    } else {
+      targetTheme = "verao";
+      changeThemeMobile.checked = false;
+    }
+
+    document.documentElement.setAttribute("data-theme", targetTheme);
+    localStorage.setItem("theme", targetTheme);
+  });
+}
+
 function changeIngressoInfo() {
   let nome = document.getElementById("nome");
   let ingresso = document.getElementById("ingresso");
