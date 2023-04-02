@@ -2,6 +2,15 @@ import changeNavButton from "./index.js";
 
 window.addEventListener("load", function () {
   setTheme();
+  ScrollReveal().reveal(".banner_experiencia h1", { delay: 200 });
+  ScrollReveal().reveal(".moca_feliz", { delay: 300 });
+  ScrollReveal().reveal(".texto", { delay: 450 });
+  ScrollReveal().reveal(".eco-bag", { delay: 450 });
+  ScrollReveal().reveal(".texto-sustentabilidade", { delay: 300 });
+  ScrollReveal().reveal(".carrossel", { delay: 300 });
+  ScrollReveal().reveal(".texto", { delay: 450 });
+  ScrollReveal().reveal(".socials", { delay: 150 });
+  ScrollReveal().reveal(".desenvolvido", { delay: 150 });
 });
 
 const paginaAtiva = document.getElementById("pagina_ativa");

@@ -3,6 +3,15 @@ import { setTheme } from "./experiencia.js";
 
 window.addEventListener("load", function () {
   setTheme();
+  ScrollReveal().reveal(".banner_setores h1", { delay: 200 });
+  ScrollReveal().reveal(".mapa_img", { delay: 300 });
+  ScrollReveal().reveal(".legenda", { delay: 450 });
+  ScrollReveal().reveal(".detalhes h3", { delay: 300 });
+  ScrollReveal().reveal(".pista", { delay: 400 });
+  ScrollReveal().reveal(".premium", { delay: 600 });
+  ScrollReveal().reveal(".cadeiras", { delay: 800 });
+  ScrollReveal().reveal(".socials", { delay: 150 });
+  ScrollReveal().reveal(".desenvolvido", { delay: 150 });
 });
 
 const paginaAtiva = document.getElementById("pagina_ativa");

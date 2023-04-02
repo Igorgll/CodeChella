@@ -3,6 +3,11 @@ import { setTheme } from "./experiencia.js";
 
 window.addEventListener("load", function () {
   setTheme();
+  ScrollReveal().reveal(".banner_ingresso-comprado h1", { delay: 200 });
+  ScrollReveal().reveal(".section_ingresso-comprado h3", { delay: 450 });
+  ScrollReveal().reveal(".ingresso_qrcode", { delay: 650 });
+  ScrollReveal().reveal(".socials");
+  ScrollReveal().reveal(".desenvolvido");
 });
 
 window.onload = function () {

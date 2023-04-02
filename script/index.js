@@ -2,6 +2,17 @@ import { setTheme } from "./experiencia.js";
 
 window.addEventListener("load", function () {
   setTheme();
+  ScrollReveal().reveal(".banner h1", { delay: 200 });
+  ScrollReveal().reveal(".alurodromo", { delay: 300 });
+  ScrollReveal().reveal(".pessoas_img", { delay: 300 });
+  ScrollReveal().reveal(".dates_desc", { delay: 450 });
+  ScrollReveal().reveal(".line-up h2", { delay: 150 });
+  ScrollReveal().reveal(".sabado", { delay: 250 });
+  ScrollReveal().reveal("#sabado_list", { delay: 350 });
+  ScrollReveal().reveal(".domingo", { delay: 450 });
+  ScrollReveal().reveal("#domingo_list", { delay: 550 });
+  ScrollReveal().reveal(".socials", { delay: 150 });
+  ScrollReveal().reveal(".desenvolvido", { delay: 150 });
 
   const toggle = document.getElementById("toggleSwitch");
   if (toggle) {

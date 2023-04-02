@@ -4,6 +4,15 @@ import { setTheme } from "./experiencia.js";
 const first_content = document.querySelector(".conteudo_first");
 window.addEventListener("load", function () {
   setTheme();
+  ScrollReveal().reveal(".banner_informacoes h1", { delay: 200 });
+  ScrollReveal().reveal(".perguntas h2", { delay: 350 });
+  ScrollReveal().reveal(".first", { delay: 450 });
+  ScrollReveal().reveal(".second", { delay: 550 });
+  ScrollReveal().reveal(".third");
+  ScrollReveal().reveal(".fourth");
+  ScrollReveal().reveal(".fifth");
+  ScrollReveal().reveal(".socials");
+  ScrollReveal().reveal(".desenvolvido");
   first_content.classList.add("active");
 });
 

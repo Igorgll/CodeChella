@@ -3,6 +3,14 @@ import { setTheme } from "./experiencia.js";
 
 window.addEventListener("load", function () {
   setTheme();
+  ScrollReveal().reveal(".banner_ingresso h1", { delay: 200 });
+  ScrollReveal().reveal(".content h3", { delay: 450 });
+  ScrollReveal().reveal("label");
+  ScrollReveal().reveal("input");
+  ScrollReveal().reveal("#tipoIngresso");
+  ScrollReveal().reveal(".form button");
+  ScrollReveal().reveal(".socials");
+  ScrollReveal().reveal(".desenvolvido");
 });
 
 const toggle = document.getElementById("toggleSwitchIngresso");
